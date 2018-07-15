@@ -1,6 +1,4 @@
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 *,
@@ -8,8 +6,6 @@ html {
 *::before {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
 a:link,
@@ -360,7 +356,8 @@ body {
 .sect-gallery__image {
   width: 100%;
   height: 100%;
-  object-fit: cover; }
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .sect-gallery__icons-layer {
   position: absolute;
@@ -404,7 +401,8 @@ body {
 .sect-team__photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 999px; }
 
 .sect-team__name {
@@ -488,13 +486,15 @@ body {
   .sect-promo__ipad-img {
     position: absolute;
     width: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     z-index: 1; }
   .sect-promo__minigallery-img {
     position: absolute;
     padding: 15% 7% 0;
     width: 100%;
-    object-fit: cover; }
+    -o-object-fit: cover;
+       object-fit: cover; }
   @media (min-width: 769px) and (max-width: 1199px) {
     .sect-promo {
       padding: 50px 0; } }
