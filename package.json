@@ -1,0 +1,11 @@
+{
+  "name": "parcel_demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jarosław Bagnicki <jarek@bagnicki.net>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "parcel-bundler": "^1.9.6"
+  }
+}
