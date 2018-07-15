@@ -6,8 +6,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "clean-dist": "rm -rf dist",
+    "start": "npm run clean-dist && parcel src/index.html --open",
+    "build": "npm run clean-dist && parcel build src/index.html"
   },
   "devDependencies": {
     "node-sass": "^4.9.2",
