@@ -7,8 +7,9 @@
   "private": true,
   "scripts": {
     "clean-dist": "rm -rf dist",
-    "serve": "npm run clean-dist && parcel src/index.html --open",
-    "build": "npm run clean-dist && parcel build src/index.html --no-source-maps",
+    "clean-dev": "rm -rf dev",
+    "serve": "npm run clean-dev && parcel src/index.html --out-dir dev --open",
+    "build": "npm run clean-dist && parcel build src/index.html --no-source-maps --public-url ./",
     "sass": "node-sass src/sass/main.scss dist/style.css --source-map true"
   },
   "devDependencies": {
